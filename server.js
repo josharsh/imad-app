@@ -1,8 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
-var path = require('path');
+var path = require('path'); //Libraries Used in Javascript 
 
-var app = express();
+var app = express(); // Maybe Express Framework
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
