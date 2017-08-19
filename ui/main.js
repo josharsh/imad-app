@@ -4,7 +4,7 @@ var element = document.getElementById('maintxt');
 element.innerHTML="New Value";
 
 var picture= document.getElementById('PIC');
-PIC.onclick= function(){
+picture.onclick= function(){
     PIC.style.marginleft='100px';
     
     
