@@ -15,8 +15,8 @@ app.get('/article-one', function (req, res){
 app.get('/counter', function (req,res){
     var counter=0;
     counter=counter+1;
-    var a=counter.toString();
-    res.send(a);
+   
+    res.send(counter.toString());
     
     
 });
