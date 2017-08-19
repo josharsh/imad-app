@@ -3,3 +3,5 @@ console.log('Loaded!');
 var element = document.getElementById('maintxt');
 element.innerHTML="New Value";
 
+var picture= document.getElementById('PIC');
+picture.innerHTML="NNN VALUES";
