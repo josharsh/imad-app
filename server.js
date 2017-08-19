@@ -12,6 +12,15 @@ app.get('/', function (req, res) {
 app.get('/article-one', function (req, res){
    res.sendFile(path.join(__dirname, 'ui', 'article-one.html')) });
 
+app.get('/counter', function (req,res){
+    var counter=0;
+    counter=counter+1;
+    var a=counter.toString;
+    res.send(a);
+    
+    
+});
+
 app.get('/article-two', function (req, res){
     res.send("Article two Will be served here!");
 });
