@@ -1,4 +1,4 @@
-var btn= document.getElementById('counder');
+var btn= document.getElementById('count');
 var counterclick=0;
 btn.onClick(function(){
   
