@@ -1,21 +1,11 @@
-console.log('Loaded!');
-// Change the Text Of the Main File
-var element = document.getElementById('maintxt');
-element.innerHTML="New Value";
-
-var picture= document.getElementById('PIC');
-    PIC.onclick= function()
-    {var marginLeft=0;
-        function moveRight()
-    {
-        marginLeft=marginLeft+3;
-      PIC.style.marginLeft = marginLeft+'px';
-        
-    }
-        var interval= setInterval(moveRight, 100);
-    PIC.style.marginLeft='50px';
+var btn= document.getElementById('counder');
+var counterclick=0;
+btn.onClick(function(){
+  
+  counterclick=counterclick+1;
+  var spn=document.getElementById('count');
+  spn.innerHTML=counterclick.toString();
+});
     
     
     
-    
-};
