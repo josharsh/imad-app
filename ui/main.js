@@ -8,12 +8,12 @@ var picture= document.getElementById('PIC');
     {var marginLeft=0;
         function moveRight()
     {
-        marginLeft=marginLeft+10;
+        marginLeft=marginLeft+3;
       PIC.style.marginLeft = marginLeft+'px';
         
     }
         var interval= setInterval(moveRight, 100);
-    PIC.style.marginLeft='100px';
+    PIC.style.marginLeft='50px';
     
     
     
