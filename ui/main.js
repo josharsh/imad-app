@@ -5,7 +5,7 @@ element.innerHTML="New Value";
 
 var picture= document.getElementById('PIC');
 picture.onclick= function(){
-    PIC.style.marginleft='100px';
+    picture.style.marginleft='100px';
     
     
     
