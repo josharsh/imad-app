@@ -9,11 +9,16 @@ button.onClick =function () {
                 var span= document.getElementById('count');
                 span.innerHTML=counter.toString();
         }
+    }};
         
-        
+
+    request.open('GET', 'https://harshjoshipth.imad.hasura-app.io/counter', true);
+    request.send(null);
     
- 
-}}};
+    
+    
+    
+};
     
     
     
