@@ -36,7 +36,7 @@ button.onClick = function() {
     
     //capture the response and store it in a variable
     
-    counter=0;
+   
     //render the variable in correct span
     counter = counter+1;
     var span=document.getElementById('count');
