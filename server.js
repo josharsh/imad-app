@@ -30,7 +30,7 @@ pool.query("Select * from test1", function(err, result){
             res.status(500).send(err.toString());
         }
         else
-        res.send(JSON.setingify(result));
+      {  res.send(JSON.setingify(result));}
         
     });
 });
