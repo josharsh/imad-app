@@ -7,9 +7,7 @@ var config={
     database: 'harshjoshipth',
     host: 'db.imad.hasura-app.io',
     port:'5432',
-    password: process.env.DB_PASSWOROD
-    
-    
+    password:'db-harshjoshipth-23213'
 };
 var app = express(); // Maybe Express Framework
 app.use(morgan('combined'));
