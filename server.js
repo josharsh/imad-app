@@ -7,7 +7,9 @@ var config={
     database: 'harshjoshipth',
     host: 'db.imad.hasura-app.io',
     port:'5432',
-    password:'db-harshjoshipth-23213'
+    password: process.env.DB_PASSWOROD
+    
+    
 };
 var app = express(); // Maybe Express Framework
 app.use(morgan('combined'));
@@ -20,7 +22,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var pool= new Pool(config);
-app.get('/test-db', function (req,res){
+app.get('test-db', function (req,res){
     // make a select request
     // return a respose with results 
     pool.query("Select * from test1;", function(err, result){
