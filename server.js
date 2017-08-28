@@ -13,7 +13,19 @@ var config={
 };
 var app = express(); // Maybe Express Framework
 app.use(morgan('combined'));
-
+var pool= new Pool(config);
+app.get('injection', function (req,res){
+    // make a select request
+    // return a respose with results 
+pool.query("Select * from injection", function(err, result){
+        if(err){
+            res.status(500).send(err.toString());
+        }
+        else
+      {  res.send(JSON.setingify(result));}
+        
+    });
+});
 
 
 
